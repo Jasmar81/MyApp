@@ -1,0 +1,17 @@
+ion-menu {
+  // Apuntamos al contenedor interno del menú
+  ion-content {
+    /* Agregamos la imagen de fondo */
+    --background: linear-gradient(rgba(102, 139, 240, 0.8), rgba(102, 139, 240, 0.8)), 
+                  url('/assets/bolsos_jadri.png') no-repeat center center / cover;
+
+    /* Opcional: Si quieres que el texto del menú sea blanco */
+    --color: #ffffff;
+  }
+}
+
+/* Para asegurar que los ítems del menú sean transparentes y dejen ver el fondo */
+ion-item {
+  --background: transparent;
+  --color: #ffffff;
+}

@@ -1,27 +1,18 @@
-#container {
-  text-align: center;
-
+ion-title {
   position: absolute;
+  top: 0;
   left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  text-align: start; /* Esto lo alineará a la izquierda */
+  padding-inline: 50px; /* Ajusta esto para que no choque con el botón del menú */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-content {
+    // Usamos --background que es la variable nativa de Ionic
+    --background: none; 
+    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), // Capa oscura para que el texto se lea bien
+        url('../../assets/bolsos_jadri.png') no-repeat center center / cover;
 }

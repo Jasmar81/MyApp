@@ -1,0 +1,13 @@
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: start; /* Esto lo alineará a la izquierda */
+  padding-inline: 50px; /* Ajusta esto para que no choque con el botón del menú */  
+}
+
+ion-content{
+  background: blue;
+}
