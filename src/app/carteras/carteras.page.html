@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   
+    <ion-title>carteras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">carteras</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  
+<ion-list>  
+
+ <ion-item *ngFor="let cartera of carteras" [routerLink]="['/carteras', cartera.id]">
+
+    <ion-avatar slot="start">
+     <ion-img [src]="cartera.imageURL" />
+   </ion-avatar>
+    <ion-label>
+        {{cartera.title}}
+    </ion-label>
+</ion-item>
+
+</ion-list>
+  
+</ion-content>
